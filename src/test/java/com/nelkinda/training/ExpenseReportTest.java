@@ -30,6 +30,8 @@ public class ExpenseReportTest {
         createExpense(ExpenseType.DINNER, 5001),
         createExpense(ExpenseType.BREAKFAST, 1000),
         createExpense(ExpenseType.BREAKFAST, 1001),
+        createExpense(ExpenseType.LUNCH, 2000),
+        createExpense(ExpenseType.LUNCH, 2001),
         createExpense(ExpenseType.CAR_RENTAL, 50),
         createExpense(ExpenseType.CAR_RENTAL, Integer.MAX_VALUE)
      );
