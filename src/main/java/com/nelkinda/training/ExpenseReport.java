@@ -15,13 +15,13 @@ public class ExpenseReport {
     System.out.println("Expenses " + date);
 
     for (Expense expense : expenses) {
-      if (expense.type.isMeal()) {
-        mealExpenses += expense.amount;
+      if (expense.isMeal()) {
+        mealExpenses += expense.getAmount();
       }
-      String expenseName = expense.type.getName();
-      String mealOverExpensesMarker = expense.type.isOverLimit(expense) ? "X" : " ";
-      System.out.println(expenseName + "\t" + expense.amount + "\t" + mealOverExpensesMarker);
-      total += expense.amount;
+      String expenseName = expense.getName();
+      String mealOverExpensesMarker = expense.isOverLimit(expense.type) ? "X" : " ";
+      System.out.println(expenseName + "\t" + expense.getAmount() + "\t" + mealOverExpensesMarker);
+      total += expense.getAmount();
     }
 
     System.out.println("Meal expenses: " + mealExpenses);

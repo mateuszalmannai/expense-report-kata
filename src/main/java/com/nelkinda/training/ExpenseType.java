@@ -28,7 +28,4 @@ public enum ExpenseType {
     return meal;
   }
 
-  boolean isOverLimit(Expense expense) {
-    return expense.amount > limit;
-  }
 }
