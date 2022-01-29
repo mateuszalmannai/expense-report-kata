@@ -15,4 +15,4 @@ Another excellent Kata using approval tests; just what I was looking for
 - _Let's first make the change easy and then make the easy change_
 
 ## Tests
-- We use a trick to rewrite system out to our own output stream, which approval tests help us with  
+We use a trick to rewrite system out to our own output stream, which approval tests help us with  

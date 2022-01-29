@@ -16,6 +16,10 @@ public enum ExpenseType {
     this.limit = limit;
   }
 
+  int getLimit() {
+    return limit;
+  }
+
   String getName() {
     return name;
   }
@@ -24,7 +28,7 @@ public enum ExpenseType {
     return meal;
   }
 
-  int getLimit() {
-    return limit;
+  boolean isOverLimit(Expense expense) {
+    return expense.amount > limit;
   }
 }
