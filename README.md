@@ -1,0 +1,1 @@
+Another excellent Kata using approval tests; just what I was looking for
